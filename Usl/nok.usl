@@ -1,0 +1,24 @@
+INPUT first_number
+INPUT second_number
+
+INT first_number
+INT second_number
+
+SET a first_number
+SET b second_number
+
+cycle_start:
+
+MOD rest a b
+COMPARE rest 0
+JUMP_IF_EQUAL cycle_end
+SET a b
+SET b rest
+
+JUMP cycle_start
+
+cycle_end:
+
+MULTIPLY result first_number second_number
+DIVIDE result result b
+OUTPUT result

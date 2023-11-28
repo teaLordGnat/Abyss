@@ -1,0 +1,24 @@
+INPUT target_number
+INT target_number
+
+SET a 1
+SET b 1
+SET count 2
+
+INT a
+INT b
+INT count
+
+cycle_start:
+COMPARE count target_number
+JUMP_IF_EQUAL cycle_end
+JUMP_IF_MORE cycle_end
+
+ADD c a b
+SET a b
+SET b c
+INCREMENT count
+JUMP cycle_start
+
+cycle_end:
+OUTPUT b

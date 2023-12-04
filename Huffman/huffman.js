@@ -14,6 +14,8 @@ class Node {
 // INITIALIZE START VARIABLES
 const s = "abaccb"
 
+console.log(parseInt(5/2))
+
 // FORM ALPHABET
 const alph = {}
 for (const el of s) {

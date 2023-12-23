@@ -25,6 +25,7 @@ function print_line() {
 
 const form_frequency_table = function (encoded_text) {
     const actual_frequency = new Array(alph_size).fill(0);
+     
 
     // fill 
     let count = 0;
